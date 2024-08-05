@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.ri-account-circle-fill {
+    color: #FF0065;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.username, .userpassword {
+    padding-bottom: 20px;
+}
+
+.username input, .userpassword input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    color: #FF0065;
+} 
+
+.username input:focus, .userpassword input:focus {
+    outline: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button button {
+    padding: 10px 18px 10px 18px;
+    border: none;
+    background: #FF0065;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button button:hover {
+    cursor: pointer;
+    background-color: #ee2173;
+}
+
+a {
+    text-decoration: none;
+    color: #FF0065;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+

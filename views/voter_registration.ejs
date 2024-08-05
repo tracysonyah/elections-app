@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/voter_registration.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="wrapper">
+            <h1>Voter Registration Form</h1>
+            <h1><%= roles[0].id %></h1>
+            <form action="/registration" method="post">
+                <div class="firstname">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                </div>
+                <div class="middlename">
+                    <label for="middlename">Middle Name</label>
+                    <input type="text" name="middle_name" placeholder="Middle Name">
+                </div>
+                <div class="lastname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                    <select name="">
+                        <option value="">Select role</option>
+                        <% roles.forEach(function(role){ %>
+                             <option value="<%= role.id %>"><%= role.role_id  %></option> 
+                          <% }); %>
+                        
+                        
+                    </select>
+                </div>
+                <div class="dob">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="DOB" placeholder="Date of birth" required>
+                </div>
+                <div class="photo">
+                    <label for="photo">Photo</label>
+                    <input type="file" name="photo" accept="image/*" placeholder="photo" required>
+                </div>
+                <div class="button">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            <a href="login.ejs"><p>Already have an account?</p></a>
+        </div>
+    </div>
+</body>
+</html>

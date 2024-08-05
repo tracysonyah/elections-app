@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/public/css/login.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="wrapper">
+            <i class="ri-account-circle-fill"></i>
+            <form action="/login" method="post">
+                <div class="username">
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="userpassword">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <a href="voter_registration.ejs"><p>Don't have an account?</p></a>
+        </div>
+    </div>
+</body>
+</html>

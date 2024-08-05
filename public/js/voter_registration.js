@@ -1,0 +1,4 @@
+var signUp = {
+    name: name,
+    
+}

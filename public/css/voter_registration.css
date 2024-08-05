@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #FF0065;
+    text-align: center;
+}
+
+
+label {
+    margin-bottom: 5px;
+    color: #FF0065;
+}
+
+input[type="text"], 
+input[type="date"], 
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #FF0065;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.firstname input:focus, 
+.middlename input:focus:focus, 
+.lastname input:focus,
+.dob input:focus {
+    outline: none;
+}
+
+.button {
+    padding-bottom: 10px;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF0065;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button button:hover {
+    background-color: #ee2173;
+}
+
+a {
+    text-align: center;
+    color: #FF0065;
+    text-decoration: none;
+}
